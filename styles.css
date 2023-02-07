@@ -1,0 +1,60 @@
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.card-container {
+    display: grid;
+}
+
+.product-type {
+    text-transform: uppercase;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+    letter-spacing: 2px;
+}
+
+.card-title {
+    font-family: 'Fraunces', serif;
+    font-weight: 700;
+    font-size: 2rem;
+}
+
+.card-description {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+    font-size: 14px;
+
+    line-height: 2rem;
+}
+
+.card-adjusted-price {
+    font-family: 'Fraunces', serif;
+    font-weight: 700;
+}
+
+.card-original-price {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+    font-size: 14px;
+}
+
+/* .card-info {
+    max-width: 250px;
+} */
+
+@media screen and (max-width: 375px) {
+   .card-image {
+    display: block;
+    max-width: 100%;
+    height: auto;
+   }
+    .card-title {
+        max-width: 450px;
+    }
+
+    .card-description {
+        max-width: 450px;
+    }
+}
