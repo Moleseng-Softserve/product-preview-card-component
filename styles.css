@@ -58,7 +58,7 @@ body{
     color: var(--paragraph-color); 
 
     /* Mobile */
-    font-size: .7rem;
+    font-size: .7rem; /*FONT*/
     letter-spacing: 3px;
 }
 
@@ -71,7 +71,7 @@ body{
     line-height: 2rem;
 
     /* MOBILE */
-    font-size: 2rem;
+    font-size: 2rem; /*FONT*/
 }
 
 .card-description {
@@ -84,7 +84,7 @@ body{
     color: var(--paragraph-color);
 
     /* MOBILE */
-    font-size: 14px;
+    font-size: 14px; /*FONT*/
 }
 
 .prices {
@@ -100,7 +100,7 @@ body{
     color: var(--btn-color);
 
     /* MOBILE */
-    font-size: 2rem;
+    font-size: 2rem; /*FONT*/
 }
 
 .card-original-price {
@@ -111,13 +111,14 @@ body{
     align-self: center;
 
     /* MOBILE */
-    font-size: .85rem;
+    font-size: .85rem; /*FONT*/
 }
 
 .card-btn {
     grid-area: button; 
     display: flex;
     justify-content: center;
+    align-items: center;
     border: none;
     background-color: var(--btn-color);
     border-radius: var(--btn-radius);
@@ -135,6 +136,70 @@ body{
 .btn-icon {
     margin-right: 8px;
     /* max-height: .8rem */
+}
+
+
+@media screen and (min-width: 600px){
+    .card-container {        
+        grid-template-columns: 20% 30% 70% 20%;
+        grid-template-areas: ". img info .";
+    }
+
+    picture {
+        grid-column: 2 / 3;
+    } 
+
+    .card-image {
+        border-top-left-radius: var(--btn-radius);
+        border-bottom-left-radius: var(--btn-radius);
+        border-top-right-radius: 0%;
+    }
+
+    .card-info {
+        grid-template-rows: 3rem 30% 25% 20% 12%;
+        padding:  3rem 2.25rem 2rem 2.25rem;
+        max-width: 350px;
+    }
+
+    .product-type {
+        font-size: 1rem; /*FONT*/
+        margin-bottom: 1rem;
+        letter-spacing: 6px;
+    }
+
+    .card-title {
+        max-width: 250px;
+        font-size: 2.55rem; /*FONT*/
+        line-height: 2.5rem;
+        /* padding-bottom: 3rem; */
+    }
+
+    .card-description {
+        font-size: 1.2rem; /*FONT*/
+        line-height: 2rem;
+    }
+
+    .prices {
+        align-items: center;
+        justify-items: center;
+        grid-template-columns: 40% 35%;
+    }
+
+    .card-adjusted-price {
+        font-size: 2.25rem;
+    }
+
+    .card-original-price {
+        font-size: 1rem; /*FONT*/
+    }
+
+    .card-btn {
+        
+    }
+
+    .btn-text {
+        font-size: 1rem; /*FONT*/
+    }
 }
 
 
