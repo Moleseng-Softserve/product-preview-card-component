@@ -23,17 +23,18 @@
   </head>
   <body>
     <div class="card-container">
-      <img
-        srcset="
-          ./images/image-product-mobile.jpg 375w
-          ./images/image-product-desktop.jpg 1440w
-        "
-        sizes="(max-width: 375px) 480px,
-        1440px"
-        src="./images/image-product-desktop.jpg"
-        alt="Image of Perfume"
-        class="card-image grid-item"
-      />
+      <picture>
+        <source
+          media="(min-width:400px)"
+          srcset="./images/image-product-desktop.jpg"
+        />
+        <img
+          src="./images/image-product-mobile.jpg"
+          alt="Image of Perfume"
+          class="card-image grid-item"
+        />
+      </picture>
+
       <div class="card-info">
         <p class="product-type grid-item">perfume</p>
         <h1 class="card-title grid-item">Gabrielle Essence Eau De Parfum</h1>
