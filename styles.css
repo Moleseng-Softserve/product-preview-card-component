@@ -58,9 +58,12 @@ body{
     color: var(--paragraph-color); 
 
     /* Mobile */
-    font-size: .7rem; /*FONT*/
+    font-size: clamp(.7rem, 0.6vw + .475rem , 1rem); /*FONT*/
     letter-spacing: 3px;
 }
+
+/*.7rem*/
+
 
 .card-title {
     /* ALL */
@@ -162,7 +165,7 @@ body{
     }
 
     .product-type {
-        font-size: 1rem; /*FONT*/
+        /* font-size: 1rem; FONT */
         margin-bottom: 1rem;
         letter-spacing: 6px;
     }
