@@ -6,6 +6,7 @@ body{
     padding: 0;
     box-sizing: border-box; 
     background-color: hsl(30, 38%, 92%);
+   
 }
 
 .card-container {
@@ -62,8 +63,6 @@ body{
     letter-spacing: 3px;
 }
 
-/*.7rem*/
-
 
 .card-title {
     /* ALL */
@@ -74,7 +73,7 @@ body{
     line-height: 2rem;
 
     /* MOBILE */
-    font-size: 2rem; /*FONT*/
+    font-size: clamp(2rem, 2.1vw + .7125rem, 2.55rem); /*FONT*/
 }
 
 .card-description {
@@ -87,7 +86,7 @@ body{
     color: var(--paragraph-color);
 
     /* MOBILE */
-    font-size: 14px; /*FONT*/
+    font-size: clamp(.875rem, .65vw + .63125rem, 1.2rem); /*FONT*/
 }
 
 .prices {
@@ -103,7 +102,7 @@ body{
     color: var(--btn-color);
 
     /* MOBILE */
-    font-size: 2rem; /*FONT*/
+    font-size: clamp(2rem, 2.1vw + .7125rem, 2.55rem); /*FONT*/
 }
 
 .card-original-price {
@@ -114,7 +113,7 @@ body{
     align-self: center;
 
     /* MOBILE */
-    font-size: .85rem; /*FONT*/
+    font-size: clamp(.85rem, .3vw + .7375rem, 1rem); /*FONT*/
 }
 
 .card-btn {
@@ -130,6 +129,10 @@ body{
 
     font-family: 'Montserrat', sans-serif;
     font-weight: 700;
+}
+
+.btn-text {
+    font-size: clamp(.825rem, .35vw + .69375rem, 1rem);
 }
 
 .card-btn:hover {
@@ -159,8 +162,12 @@ body{
     }
 
     .card-info {
-        grid-template-rows: 3rem 30% 25% 20% 12%;
-        padding:  3rem 2.25rem 2rem 2.25rem;
+        grid-template-rows: 2.25rem 30% 27% 20% 12%;
+
+        border-top-right-radius: var(--btn-radius);
+        border-bottom-left-radius: 0;
+
+        padding:  3rem 2.25rem 1.75rem 2.25rem;
         max-width: 350px;
     }
 
@@ -172,205 +179,24 @@ body{
 
     .card-title {
         max-width: 250px;
-        font-size: 2.55rem; /*FONT*/
         line-height: 2.5rem;
         /* padding-bottom: 3rem; */
     }
 
     .card-description {
-        font-size: 1.2rem; /*FONT*/
         line-height: 2rem;
     }
 
     .prices {
         align-items: center;
         justify-items: center;
-        grid-template-columns: 40% 35%;
+        grid-template-columns: 40% 25%;
     }
 
     .card-adjusted-price {
-        font-size: 2.25rem;
     }
 
     .card-original-price {
         font-size: 1rem; /*FONT*/
     }
-
-    .card-btn {
-        
-    }
-
-    .btn-text {
-        font-size: 1rem; /*FONT*/
-    }
 }
-
-
-
-/* .card-container {
-    display: grid;
-    background-color: hsl(30, 38%, 92%);
-    --paragraph-color: hsl(228, 12%, 48%);
-    --btn-radius: 8px;
-}
-
-.product-type {
-    text-transform: uppercase;
-    font-family: 'Montserrat', sans-serif;
-    font-weight: 400;
-    letter-spacing: 3px;
-    font-size: .65rem;
-    color: var(--paragraph-color);
-}
-
-.card-title {
-    font-family: 'Fraunces', serif;
-    font-weight: 700;
-    font-size: 1.75rem;
-}
-
-.card-description {
-    font-family: 'Montserrat', sans-serif;
-    font-weight: 500;
-    font-size: .85rem;
-
-    color: var(--paragraph-color);
-    line-height: 1.5rem;
-}
-
-.prices {
-    display: flex;
-    align-items: center;
-}
-
-.card-adjusted-price {
-    font-family: 'Fraunces', serif;
-    font-weight: 700;
-    font-size: 1.2rem;
-    color: hsl(158, 36%, 37%);
-    margin-right: 1rem;
-}
-
-.card-original-price {
-    font-family: 'Montserrat', sans-serif;
-    font-weight: 500;
-    font-size: 14px;
-    font-size: .6rem;
-    text-decoration: line-through;
-    color: var(--paragraph-color);
-}
-
-.card-btn {
-    display: flex;
-    border: none;
-    background-color: hsl(158, 36%, 37%);
-    color: hsl(0, 0%, 100%);
-    margin-block-start: 1.5rem;
-    border-radius: 8px;
-    padding: 0 6px;
-    align-items: center;
-    justify-content: center;
-    cursor: pointer;
-}
-
-.card-btn:hover {
-    background-color: hsl(212, 21%, 14%);
-}
-.btn-icon {
-    margin-right: 8px;
-    max-height: .75rem;
-}
-
-.btn-text {
-    display: inline;
-    font-size: .7rem; 
-}
-
-@media screen and (max-width: 1440px) {
-
-    .card-container {
-        display: grid;
-        grid-template-columns: repeat(4, 1fr);
-        max-height: fit-content;
-    }
-
-    .card-image {
-        max-height: 90vh;
-        grid-column: 2 / 3;
-        border-top-left-radius: var(--btn-radius);
-        border-bottom-left-radius: var(--btn-radius);
-    }
-
-    .card-info {
-        padding: 1.75rem;
-        background-color: hsl(0, 0%, 100%);
-        grid-column: 3 / 4;
-        border-top-right-radius: var(--btn-radius);
-        border-bottom-right-radius: var(--btn-radius);
-        max-height: 90vh;
-    }
-
-    .card-title {
-        max-width: 200px;
-        font-size: 2rem;
-    }
-
-    .card-description {
-        max-width: 300px;
-        font-size: 1.2rem;
-    }
-    
-    .card-btn {
-        width: 100%;
-    }
-    
-}
-
-@media screen and (max-width: 375px) {
-
-    .card-container {
-        padding: .5rem 0.75rem;
-        max-height: 100vh;
-    }
-
-    p:not(.btn-text){
-        margin-block-start: .75rem;
-        margin-block-end: 0;
-    }
-
-    h1 {
-        margin-block-end: 0;
-        margin-block-start: .4rem;
-    }
-
-    .card-image {
-        display: block;
-        max-width: 100%;
-        height: auto;
-        border-top-left-radius: var(--btn-radius);
-        border-top-right-radius: var(--btn-radius);
-    }
-
-    .card-info {
-        display: grid;
-        padding: 0 1rem 1rem 1rem;
-        background-color: hsl(0, 0%, 100%);
-        border-bottom-left-radius: var(--btn-radius);
-        border-bottom-right-radius: var(--btn-radius);
-    }
-    .card-title {
-        max-width: 450px;
-    }
-
-    .card-description {
-        max-width: 450px;
-    }
-
-    .prices {
-        margin-block-start: 1rem;
-    }
-
-    .card-btn {
-        margin-block-start: .8rem;
-    }
-} */
