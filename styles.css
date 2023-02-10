@@ -26,7 +26,6 @@ body{
     display: block;
     grid-area: img;
 
-    /* MOBILE */
     border-top-left-radius: var(--btn-radius);
     border-top-right-radius: var(--btn-radius);
 }
@@ -50,7 +49,6 @@ body{
 }
 
 .product-type {
-    /* All */
     grid-area: prodType;
     margin-bottom: .75rem;
     text-transform: uppercase;
@@ -58,26 +56,22 @@ body{
     font-weight: 400;   
     color: var(--paragraph-color); 
 
-    /* Mobile */
-    font-size: clamp(.7rem, 0.6vw + .475rem , 1rem); /*FONT*/
+    font-size: clamp(.7rem, 0.6vw + .475rem , 1rem); 
     letter-spacing: 3px;
 }
 
 
 .card-title {
-    /* ALL */
     grid-area: title;
     margin-bottom: 1rem;
     font-family: 'Fraunces', serif;
     font-weight: 700;
     line-height: 2rem;
 
-    /* MOBILE */
-    font-size: clamp(2rem, 2.1vw + .7125rem, 2.55rem); /*FONT*/
+    font-size: clamp(2rem, 2.1vw + .7125rem, 2.55rem); 
 }
 
 .card-description {
-    /* ALL */
     grid-area: description;
     margin-bottom: 1rem;
     font-family: 'Montserrat', sans-serif;
@@ -85,8 +79,7 @@ body{
     line-height: 1.5rem;
     color: var(--paragraph-color);
 
-    /* MOBILE */
-    font-size: clamp(.875rem, .65vw + .63125rem, 1.2rem); /*FONT*/
+    font-size: clamp(.875rem, .65vw + .63125rem, 1.2rem); 
 }
 
 .prices {
@@ -101,8 +94,7 @@ body{
     font-weight: 700;
     color: var(--btn-color);
 
-    /* MOBILE */
-    font-size: clamp(2rem, 2.1vw + .7125rem, 2.55rem); /*FONT*/
+    font-size: clamp(2rem, 2.1vw + .7125rem, 2.55rem); 
 }
 
 .card-original-price {
@@ -112,8 +104,7 @@ body{
     color: var(--paragraph-color);
     align-self: center;
 
-    /* MOBILE */
-    font-size: clamp(.85rem, .3vw + .7375rem, 1rem); /*FONT*/
+    font-size: clamp(.85rem, .3vw + .7375rem, 1rem); 
 }
 
 .card-btn {
@@ -141,7 +132,6 @@ body{
 
 .btn-icon {
     margin-right: 8px;
-    /* max-height: .8rem */
 }
 
 
@@ -172,7 +162,6 @@ body{
     }
 
     .product-type {
-        /* font-size: 1rem; FONT */
         margin-bottom: 1rem;
         letter-spacing: 6px;
     }
@@ -180,7 +169,6 @@ body{
     .card-title {
         max-width: 250px;
         line-height: 2.5rem;
-        /* padding-bottom: 3rem; */
     }
 
     .card-description {
@@ -193,10 +181,7 @@ body{
         grid-template-columns: 40% 25%;
     }
 
-    .card-adjusted-price {
-    }
-
     .card-original-price {
-        font-size: 1rem; /*FONT*/
+        font-size: 1rem; 
     }
 }
