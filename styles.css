@@ -151,6 +151,17 @@ body{
         border-top-right-radius: 0%;
     }
 
+    .card-amount {
+        position: absolute;
+        left: 32.5rem;
+        top: .5rem;
+        padding: .5rem;
+        background-color: aliceblue;
+        border-radius: var(--btn-radius);
+        font-family: 'Montserrat', sans-serif;
+        font-size: .75rem;
+    }
+
     .card-info {
         grid-template-rows: 2.25rem 30% 27% 20% 12%;
 
