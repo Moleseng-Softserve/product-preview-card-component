@@ -30,6 +30,17 @@ body{
     border-top-right-radius: var(--btn-radius);
 }
 
+.card-amount {
+    position: absolute;
+    left: 20rem;
+    top: .5rem;
+    padding: .5rem;
+    background-color: aliceblue;
+    border-radius: var(--btn-radius);
+    font-family: 'Montserrat', sans-serif;
+    font-size: .75rem;
+}
+
 .card-info {
     grid-area: info;
     display: grid;
